@@ -1,3 +1,8 @@
+CHALLENGE
+=========
+
+ 
+
 -   Create a HTML page called *box.html* using this template:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

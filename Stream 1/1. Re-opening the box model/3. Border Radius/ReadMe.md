@@ -1,3 +1,8 @@
+CHALLENGE
+=========
+
+ 
+
 We will continue working with the html page (box.html) created in the last
 challenge. Add the border-radius property to your .box class. Change the border
 style to “solid”.
