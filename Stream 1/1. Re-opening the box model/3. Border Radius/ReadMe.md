@@ -29,13 +29,11 @@ style to “solid”.
 
  
 
-![](../../../../../../../Downloads/witdh_challenges.png)
-
- 
+![](img/witdh_challenges.png)
 
 -   As an extra challenge, create a lemon shape using border and radius
     properties.
 
  
 
-![](../../../../../../../Downloads/lemons-150x150.png)
+![](img/lemons-150x150.png)

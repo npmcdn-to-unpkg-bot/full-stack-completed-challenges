@@ -44,4 +44,4 @@
 
 Did you get the following result?
 
-![](../../../../../../../Downloads/14a_pasted.png)
+![](img/Box.png)
