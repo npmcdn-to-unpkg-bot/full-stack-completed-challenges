@@ -15,9 +15,29 @@
         }
         
         #container {
-            width: 550px;
+            width: 400px;
             margin: auto;
-            background-color: #e5f0f3;
+        }
+        
+        #input_types {
+            /*basic styling for the form content*/
+            background-color: rgba(129, 187, 201, .2);
+        }
+        
+        .submit {
+            /*to offset submit buttton*/
+            margin-bottom: 10px;
+            margin-left: 100px;
+        }
+        
+        .label {
+            /*styling labels for the inputs*/
+            display: inline-block;
+            float: left;
+            clear: left;
+            text-align: left;
+            width: 100px;
+            margin-top: 5px;
         }
         
         legend {
@@ -36,10 +56,12 @@
         }
         
         input {
+            /*styling for input fields*/
+            display: inline-block;
             width: 200px;
             border-radius: 5px;
             padding: 6px 8px;
-            margin: 10px;
+            margin-top: 6px;
         }
         
         .field {
@@ -61,10 +83,6 @@
             margin-bottom: 100px;
             background-color: rgba(129, 187, 201, .2);
         }
-        
-        :focus {
-            background-color: #FFECE9;
-        }
     </style>
 </head>
 
@@ -72,19 +90,18 @@
     <div id="container">
         <div id="input_types">
             <form>
-                <label for="firstName" class="field">First Name*:</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" autocomplete="on" required="" autofocus />
-                <br />
-                <label for="lastName" class="field">Last Name*:</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" autocomplete="on" required="" />
-                <br />
-                <label for="e-mail" class="field">E-Mail*:</label>
-                <input type="email" id="e-mail" name="e-mail" placeholder="Enter your email address" autocomplete="on" required="" />
-                <br />
-                <label for="website" class="field">Website:</label>
-                <input type="url" id="website" name="website" placeholder="Enter your website url" autocomplete="on" />
-                <br />
-                <label for="submit" class="field">Submit</label>
+                <div class="label">First Name:</div>
+                <input type="text" id="fname" name="fname" />
+                <br>
+                <div class="label">Password: </div>
+                <input id="password" name="password" type="password" />
+                <br>
+                <div class="label">Email:</div>
+                <input id="email" name="email" type="email" />
+                <br>
+                <div class="label">Website:</div>
+                <input id="website" name="website" type="url" />
+                <br>
                 <input type="submit" class="submit" value="submit" />
             </form>
         </div>
