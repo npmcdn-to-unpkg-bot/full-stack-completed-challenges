@@ -15,6 +15,4 @@ var stops = [“i”,”am”,”a”,”and”]; //words to be removed from pro
 
  
 
-These challenges were performed in google chrome developer tools console and
-also repl.it, however you can see the actual JavaScript examples provided by
-code institute for the lesson in the solutions folder.
+see solutions folder for .js lesson file.
