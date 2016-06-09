@@ -1,0 +1,107 @@
+<!-- Meet the band div begin -->
+<div id="meet-the-band">
+	<h3 class="text-center">From The Blog</h3>
+	<!-- nav tabs begin -->
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="" data-target="#home">Joe</a></li>
+		<li><a data-toggle="tab" href="" data-target="#menu1">John</a></li>
+		<li><a data-toggle="tab" href="" data-target="#menu2">Paul</a></li>
+	</ul>
+
+	<div class="tab-content">
+		<div id="home" class="tab-pane fade in active">
+			<h2>Joe Bloggs, Guitarist</h2>
+			<img class="img-thumbnail img-responsive" src="../img/meet-the-band/landscape-nature-man-person.jpg" alt="" />
+			<p>Ham ground pastrami andouillette. Prosciutto ham jowl leberkas ham shankle short shankle. Ham boudin pork jowl sirloin, ball andouille braunschweiger. Hamburger frankfurter cow leberkas, t-bone ham tip short tri-tip tip cow ham andouillette ham filet sopressata tenderloin ribeye chicken. Spare shankle biltong. Venison tail prosciutto, ham cow pork round swine, drumstick pork ham capicola frankfurter ham kielbasa jowl bresaola prosciutto, landjaeger ribeye ribs hamburger ribs, cow corned venison leberkas pig ham strip pastrami frankfurter cow ham cow andouillette. Shankle shank ham tri-tip sopressata ham cow pork venison bierschinken cow shank pig drumstick pig tip pork hamburger, tip kevin meatball, shoulder tip sausage pig steak sopressata pastrami round prosciutto cow beef capicola kielbasa. Cow ground corned ribs turducken.</p>
+			<p>Ham ground pastrami andouillette. Prosciutto ham jowl leberkas ham shankle short shankle. Ham boudin pork jowl sirloin, ball andouille braunschweiger. Hamburger frankfurter cow leberkas, t-bone ham tip short tri-tip tip cow ham andouillette ham filet sopressata tenderloin ribeye chicken. Spare shankle biltong. Venison tail prosciutto, ham cow pork round swine, drumstick pork ham capicola frankfurter ham kielbasa jowl bresaola prosciutto, landjaeger ribeye ribs hamburger ribs, cow corned venison leberkas pig ham strip pastrami frankfurter cow ham cow andouillette. Shankle shank ham tri-tip sopressata ham cow pork venison bierschinken cow shank pig drumstick pig tip pork hamburger, tip kevin meatball, shoulder tip sausage pig steak sopressata pastrami round prosciutto cow beef capicola kielbasa. Cow ground corned ribs turducken.</p>
+		</div>
+		<div id="menu1" class="tab-pane fade">
+			<h2>Chandler Bing, Guitarist</h2>
+			<p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+		</div>
+		<div id="menu2" class="tab-pane fade">
+			<h2>Peter Griffin, Bass player</h2>
+			<p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+		</div>
+	</div>
+	<!-- nav tabs end -->
+</div>
+<!-- meet the band div end -->
+
+<hr>
+
+<!-- audio controller - ref: https://www.webcodegeeks.com/html5/html5-audio-player-example/  -->
+<div ng-controller="AudioController">
+	<h3>{{title}}</h3>
+	<div id="audio-player">
+		<audio controls="controls" autoplay preload="auto">
+			<p>You're browser does not support the suio element.</p>
+		</audio>
+	</div>
+	<div id="audio-player-buttons">
+		<button id="next-button" class="btn-lg btn-warning">Next</button>
+	</div>
+	<!-- audio controller end -->
+	<!-- table begin -->
+	<div id="table">
+		<table id="song-table">
+			<thead>
+				<tr>
+					<th id="album-art">
+						<h3>{{albumart}}</h3>
+					</th>
+					<th id="track-info">
+						<h3>{{track}}</h3>
+					</th>
+					<th id="track-duration">
+						<h3>{{duration}}</h3>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- (ng-repeat) loop over each song in the list -->
+				<tr>
+					<!-- album image -->
+					<td><img class="img-thumbnail img-responsive" src="../img/album-covers/album.jpg" alt="img-1" /></td>
+					<!-- track name info -->
+					<td>Last Train To Clarksville</td>
+					<!-- track duration info -->
+					<td>2:46</td>
+				</tr>
+				<tr>
+					<!-- album image -->
+					<td><img class="img-thumbnail img-responsive" src="../img/album-covers/album2.jpg" alt="img-1" /></td>
+					<!-- track name info -->
+					<td>Daydream Believer</td>
+					<!-- track duration info -->
+					<td>2:43</td>
+				</tr>
+				<tr>
+					<!-- album image -->
+					<td><img class="img-thumbnail img-responsive" src="../img/album-covers/cover.jpg" alt="img-1" /></td>
+					<!-- track name info -->
+					<td>I'm a Believer</td>
+					<!-- track duration info -->
+					<td>2:35</td>
+				</tr>
+				<tr>
+					<!-- album image -->
+					<td><img class="img-thumbnail img-responsive" src="../img/album-covers/cover1.jpg" alt="img-1" /></td>
+					<!-- track name info -->
+					<td>I'm Not Your Stepping Stone</td>
+					<!-- track duration info -->
+					<td>2:22</td>
+				</tr>
+				<tr>
+					<!-- album image -->
+					<td><img class="img-thumbnail img-responsive" src="../img/album-covers/album.jpg" alt="img-1" /></td>
+					<!-- track name info -->
+					<td>Tail Toddle</td>
+					<!-- track duration info -->
+					<td>1:27</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- table end -->
+	</div>
+</div>
