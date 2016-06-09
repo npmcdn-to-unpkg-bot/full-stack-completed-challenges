@@ -14,6 +14,7 @@ angular.module('bandAppControllers', [])
 		$scope.albumart = "Album Art";
 		$scope.track = "Track";
 		$scope.preview = "Preview";
+		$scope.trackCost = "Price";
 
 		// create a function to search itunes
 		$scope.searchiTunes = function (artist) {
