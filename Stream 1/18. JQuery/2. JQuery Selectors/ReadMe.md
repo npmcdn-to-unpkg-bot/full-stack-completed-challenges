@@ -23,8 +23,5 @@ Let’s use this technique to select the following:
 
 -   All elements with an alt attribute
 
-NOTE: The challenge was completed using chrome dev tools
-
- 
-
-### ‘A WALK THROUGH: USING CHROME DEVELOPMENT TOOLS’
+NOTE: The challenge was completed using chrome developer tools on the lesson
+files ‘sample site’
