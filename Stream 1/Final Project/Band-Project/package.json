@@ -1,10 +1,10 @@
 {
-  "name": "movies-db-app",
+  "name": "band-app",
   "private": false,
   "version": "1.0.0",
-  "description": "A tutorial using the movies db api",
-  "repository": "https://github.com/lillylangtree/mdb-nav.git",
-  "license": "MIT",
+  "description": "Stream 1 Final Project",
+  "repository": "https://github.com/GunnerJnr/full-stack-completed-challenges/tree/master/Stream%201/Final%20Project",
+  "license": "??",
   "devDependencies": { 
     "http-server": "^0.6.1",
     "shelljs": "^0.2.6"

@@ -2,60 +2,60 @@
     Itunes Search - ref: https://blogs.sequoiainc.com/build-your-first-angularjs-application-to-search-itunes/ 
 -->
 <div ng-controller="itunesController">
-	<!-- show error message if search error -->
-	{{error}}
-	<h3>{{title}}</h3>
-	<div id="search-input-container" col-md-12>
-		<!-- add form, use ng-submit directive to call searchiTunes, pass the artist -->
-		<form name="search" ng-submit="searchiTunes(artist)">
-			<!-- 
+    <!-- show error message if search error -->
+    {{error}}
+    <h3>{{title}}</h3>
+    <div id="search-input-container" col-md-12>
+        <!-- add form, use ng-submit directive to call searchiTunes, pass the artist -->
+        <form name="search" ng-submit="searchiTunes(artist)">
+            <!-- 
                         Artist/band name required, use the ng-model directive to pass the artist name back into the controller/model 
                     -->
-			<input type="search" class="form-control" required placeholder="e.g. The Commitments" ng-model="artist" />
-			<input type="submit" class="btn-lg btn-warning" value="Search" />
-		</form>
-	</div>
-	<!-- search input end -->
+            <input type="search" class="form-control" required placeholder="e.g. The Commitments" ng-model="artist" />
+            <input type="submit" class="btn-lg btn-warning" value="Search" />
+        </form>
+    </div>
+    <!-- search input end -->
 
-	<div id="search-results-container" class="col-md-12 ">
-		<!-- 
+    <div id="search-results-container">
+        <!-- 
                     ng-show directive to decide when to show results. In this case, we will show the songs when there are songs to show. 
                 -->
-		<table id="search-table" ng-show="songs ">
-			<thead>
-				<tr>
-					<th id="album-art ">
-						<h3>{{albumart}}</h3>
-					</th>
-					<th id="track-info ">
-						<h3>{{track}}</h3>
-					</th>
-					<th id="track-preview ">
-						<h3>{{preview}}</h3>
-					</th>
-					<th id="track-cost">
-						<h3>{{trackCost}}</h3>
-					</th>
-				</tr>
-			</thead>
-			<tbody>
-				<!-- (ng-repeat) loop over each song in the list -->
-				<tr ng-repeat="song in songs">
-					<!-- (ng-src) load image when data is present -->
-					<td><img class="img-thumbnail img-responsive" ng-src="{{song.artworkUrl60}}" alt="{{song.collectionName}}" /></td>
-					<!-- track name info -->
-					<td>{{song.trackName}}</td>
-					<!-- song preview -->
-					<td><a href="{{song.previewUrl}}" target="_blank">Play</a></td>
-					<!-- song cost and link to itunes for relevant song -->
-					<td>
-						<a href="{{song.trackViewUrl}}" target="_blank">£{{song.trackPrice}}</a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<!-- table end -->
-	</div>
-	<!-- search results end -->
+        <table id="search-table" ng-show="songs ">
+            <thead>
+                <tr>
+                    <th id="album-art ">
+                        <h3>{{albumart}}</h3>
+                    </th>
+                    <th id="track-info ">
+                        <h3>{{track}}</h3>
+                    </th>
+                    <th id="track-preview ">
+                        <h3>{{preview}}</h3>
+                    </th>
+                    <th id="track-cost">
+                        <h3>{{trackCost}}</h3>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- (ng-repeat) loop over each song in the list -->
+                <tr ng-repeat="song in songs">
+                    <!-- (ng-src) load image when data is present -->
+                    <td><img class="img-thumbnail img-responsive" ng-src="{{song.artworkUrl60}}" alt="{{song.collectionName}}" /></td>
+                    <!-- track name info -->
+                    <td>{{song.trackName}}</td>
+                    <!-- song preview -->
+                    <td><a href="{{song.previewUrl}}" target="_top">Play</a></td>
+                    <!-- song cost and link to itunes for relevant song -->
+                    <td>
+                        <a href="{{song.trackViewUrl}}" target="_blank">£{{song.trackPrice}}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- table end -->
+    </div>
+    <!-- search results end -->
 </div>
 <!-- Itunes controller end -->
