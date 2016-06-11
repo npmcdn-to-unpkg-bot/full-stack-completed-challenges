@@ -15,6 +15,7 @@
     <title>Stream 1 Final Project - Band Website</title>
 
     <!-- Bootstrap core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/vendor/bootstrap.min.css" rel="stylesheet" />
     <link href="css/vendor/normalize.css" rel="stylesheet" />
 
@@ -25,29 +26,28 @@
 <body>
     <!-- Main site navigation -->
     <nav class="navbar navbar-fixed-top navbar-inverse">
-        <div class="container-fluid">
-            <div class="nav navbar-header">
-                <a class="navbar-brand" href="#/home">Swing &amp; Jive Hive</a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapsingList">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- button end -->
-            </div>
-            <!-- navbar header end -->
-            <div class="collapse navbar-collapse" id="myCollapsingList">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#/home">Home</a></li>
-                    <li><a href="#/our-music">Who We Are</a></li>
-                    <li><a href="#/searchiTunes">Search iTunes</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#/contact">Get In Touch</a></li>
-                </ul>
-            </div>
-            <!-- collapsing navbar end -->
+        <div class="nav navbar-header">
+            <a class="navbar-brand" href="#/home">Swing &amp; Jive Hive</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapsingList">
+                <span class="sr-only">Toggle Nav</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- button end -->
         </div>
+        <!-- navbar header end -->
+        <div class="collapse navbar-collapse" id="myCollapsingList">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/our-music">Who We Are</a></li>
+                <li><a href="#/searchiTunes">Search iTunes</a></li>
+                <li><a href="#">Services</a></li>
+                <li id="last-nav-item"><a href="#/contact">Get In Touch</a></li>
+            </ul>
+        </div>
+        <!-- collapsing navbar end -->
+
         <!-- container end -->
     </nav>
     <!-- navigation end -->
@@ -63,6 +63,13 @@
     <footer class="nav navbar-fixed-bottom navbar-inverse">
         <div class="container-fluid">
             <p class="text-muted">&copy; 2016 David Gunner Jnr</p>
+            <!-- sourced from boootsnipp http://bootsnipp.com/snippets/featured/social-icon-strip-footer -->
+            <ul>
+                <li><a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a></li>
+                <li><a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a></li>
+                <li><a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a></li>
+                <li><a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a></li>
+            </ul>
         </div>
     </footer>
     <!-- TODO footer end -->
