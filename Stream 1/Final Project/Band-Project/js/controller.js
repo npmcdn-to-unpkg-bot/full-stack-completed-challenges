@@ -7,7 +7,7 @@ angular.module('bandAppControllers', [])
     .controller('HomeController', function ($scope) {
         $scope.title = "Welcome To Our Site!";
     })
-    .controller('itunesController', function ($scope, $http) {
+    .controller('ItunesController', function ($scope, $http) {
         // variables 
         var onSearchComplete, onError;
 
@@ -61,11 +61,11 @@ angular.module('bandAppControllers', [])
 
         // create the playlist array
         audioFiles = [
-			"http://gunnerjnr.uk/band-site/audio/Clarksville.mp3",
-			"http://gunnerjnr.uk/band-site/audio/DaydreamBeliever.mp3",
-			"http://gunnerjnr.uk/band-site/audio/ImABeliever.mp3",
-			"http://gunnerjnr.uk/band-site/audio/SteppingStone.mp3",
-			"http://gunnerjnr.uk/band-site/audio/tailtoddle_lo.mp3"
+			"audio/Clarksville.mp3",
+			"audio/DaydreamBeliever.mp3",
+			"audio/ImABeliever.mp3",
+			"audio/SteppingStone.mp3",
+			"audio/tailtoddle_lo.mp3"
 		];
 
         // set the current playlist index (starting point)
@@ -107,7 +107,7 @@ angular.module('bandAppControllers', [])
 
     })
     .controller('ContactController', function ($scope) {
-        $scope.title = "Book Us";
+        $scope.title = "Contact Us";
         $scope.firstNameLabel = "First Name: *";
         $scope.lastNameLabel = "Last Name: *";
         $scope.emailLabel = "E-mail: *";
@@ -135,6 +135,40 @@ angular.module('bandAppControllers', [])
                 $scope.emailRequired = "E-mail Required";
             }
         };
+
+        // set our map properties
+        // create a LatLng object containing the coordinate for the center of the map
+        var latlng = new google.maps.LatLng(53.3498053, -6.260309699999993, 12);
+
+        // prepare the map properties
+        var options = {
+            zoom: 5,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            navigationControl: true,
+            mapTypeControl: false,
+            scrollwheel: false,
+            disableDoubleClickZoom: true
+        };
+
+        // initialize the map object
+        var map = new google.maps.Map(document.getElementById('googleMap'), options);
+
+        // add Marker
+        var marker1 = new google.maps.Marker({
+            position: latlng,
+            map: map
+        });
+
+        // add listener for a click on the pin
+        google.maps.event.addListener(marker1, 'click', function () {
+            infowindow.open(map, marker1);
+        });
+
+        // add information window
+        var infowindow = new google.maps.InfoWindow({
+            content: '<div class="map-pin-text"><strong>If we are not touring we are normally around here..</div>'
+        });
     });
 
 //----------------------------------------------------------------------------------------------//

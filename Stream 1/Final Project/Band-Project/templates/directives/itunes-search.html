@@ -1,27 +1,30 @@
 <!-- 
     Itunes Search - ref: https://blogs.sequoiainc.com/build-your-first-angularjs-application-to-search-itunes/ 
 -->
-<div ng-controller="itunesController">
-    <!-- show error message if search error -->
-    {{error}}
-    <h3>{{title}}</h3>
-    <div id="search-input-container" col-md-12>
-        <!-- add form, use ng-submit directive to call searchiTunes, pass the artist -->
-        <form name="search" ng-submit="searchiTunes(artist)">
-            <!-- 
+
+<!-- ng controller & container fluid begin -->
+<div ng-controller="ItunesController" class="container-fluid jumbotron col-xs-12 col-sm-12" id="search-results-container">
+    <!-- row fluid begin -->
+    <div class="row-fluid">
+
+        <h1>{{title}}</h1>
+
+        <div id="search-input-container">
+            <!-- add form, use ng-submit directive to call searchiTunes, pass the artist -->
+            <form name="search" ng-submit="searchiTunes(artist)">
+                <!-- 
                         Artist/band name required, use the ng-model directive to pass the artist name back into the controller/model 
                     -->
-            <input type="search" class="form-control" required placeholder="e.g. The Commitments" ng-model="artist" />
-            <input type="submit" class="btn-lg btn-warning" value="Search" />
-        </form>
-    </div>
-    <!-- search input end -->
+                <input type="search" class="form-control" required placeholder="e.g. The Commitments" ng-model="artist" />
+                <input type="submit" class="btn-lg btn-warning" value="Search" />
+            </form>
+        </div>
+        <!-- search input end -->
 
-    <div id="search-results-container">
         <!-- 
-                    ng-show directive to decide when to show results. In this case, we will show the songs when there are songs to show. 
-                -->
-        <table id="search-table" ng-show="songs ">
+        ng-show directive to decide when to show results. In this case, we will show the songs when there are songs to show. 
+    -->
+        <table id="search-table" ng-show="songs">
             <thead>
                 <tr>
                     <th id="album-art ">
@@ -46,7 +49,7 @@
                     <!-- track name info -->
                     <td>{{song.trackName}}</td>
                     <!-- song preview -->
-                    <td><a href="{{song.previewUrl}}" target="_top">Play</a></td>
+                    <td><a href="{{song.previewUrl}}" target="_blank">Play</a></td>
                     <!-- song cost and link to itunes for relevant song -->
                     <td>
                         <a href="{{song.trackViewUrl}}" target="_blank">£{{song.trackPrice}}</a>
@@ -55,7 +58,10 @@
             </tbody>
         </table>
         <!-- table end -->
+
+        <!-- show error message if search error -->
+        {{error}}
     </div>
-    <!-- search results end -->
+    <!-- row fluid end -->
 </div>
 <!-- Itunes controller end -->
