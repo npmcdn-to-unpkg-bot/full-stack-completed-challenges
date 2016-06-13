@@ -52,28 +52,28 @@
 			<!-- form begin -->
 			<form ng-controller="ContactController" class="form-horizontal" role="form">
 				<!-- input groups begin -->
-				<div class="form-group">
+				<div class="form-group contact-form">
 					<label for="firstName">{{firstNameLabel}}</label>
 					<div>
 						<input ng-model="collectFormData.FirstName" class="form-control" id="firstName" placeholder="First Name" required>
 					</div>
 					<span ng-show="firstNameRequired" class="validation-span">{{firstNameRequired}}</span>
 				</div>
-				<div class="form-group">
+				<div class="form-group contact-form">
 					<label for="lastName">{{lastNameLabel}}</label>
 					<div>
 						<input ng-model="collectFormData.LastName" class="form-control" id="lastName" placeholder="Last Name" required>
 					</div>
 					<span ng-show="lastNameRequired" class="validation-span">{{lastNameRequired}}</span>
 				</div>
-				<div class="form-group">
+				<div class="form-group contact-form">
 					<label for="email">{{emailLabel}}</label>
 					<div>
 						<input ng-model="collectFormData.Email" class="form-control" id="email" placeholder="you're@awesome.com" required>
 					</div>
 					<span ng-show="emailRequired" class="validation-span">{{emailRequired}}</span>
 				</div>
-				<div class="form-group">
+				<div class="form-group contact-form">
 					<label for="message-box">{{messageLabel}}</label>
 					<div>
 						<textarea ng-model="collectFormData.Message" class="form-control" id="message-box" form="userForm" rows="5" cols="50" placeholder="your message here..."></textarea>

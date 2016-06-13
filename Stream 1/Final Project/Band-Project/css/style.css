@@ -468,6 +468,24 @@ footer ul {
 	.modal input:focus {
 		min-width: 180px;
 	}
+	/************************* Contact Form Style *************************/
+	.contact-form {
+		margin: 3px;
+		padding: 2px;
+	}
+	.contact-form input,
+	.contact-form textarea {
+		resize: horizontal;
+		width: 200px;
+	}
+	.contact-form input:active,
+	.contact-form textarea:active {
+		width: auto;
+	}
+	.contact-form input:focus,
+	.contact-form textarea:focus {
+		min-width: 180px;
+	}
 	/************************* Footer Style *************************/
 	footer p {
 		font-size: 10px;

@@ -1,9 +1,6 @@
 // define our application
 angular.module("bandApp", ['ngRoute', 'bandAppControllers', 'bandAppDirectives'])
 	.config(function ($routeProvider, $locationProvider) {
-		// html5 Mode set to true enables friendly url's (currently only works in local server)
-		$locationProvider.html5Mode(true);
-
 		// route our application
 		$routeProvider
 			.when('/', {
