@@ -1,6 +1,0 @@
-DOCUMENTATION - BAND PROJECT
-----------------------------
-
- 
-
- 
