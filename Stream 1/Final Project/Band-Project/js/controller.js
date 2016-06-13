@@ -1,4 +1,5 @@
 // create our controller module
+// create our controller module
 angular.module('bandAppControllers', [])
     .controller('BandController', function ($scope) {
         // controller logic here
@@ -6,7 +7,7 @@ angular.module('bandAppControllers', [])
     .controller('HomeController', function ($scope) {
         $scope.title = "Welcome To Our Site!";
     })
-    .controller('itunesController', function ($scope, $http) {
+    .controller('ItunesController', function ($scope, $http) {
         // variables 
         var onSearchComplete, onError;
 
@@ -60,11 +61,11 @@ angular.module('bandAppControllers', [])
 
         // create the playlist array
         audioFiles = [
-			"../audio/Clarksville.mp3",
-			"../audio/DaydreamBeliever.mp3",
-			"../audio/ImABeliever.mp3",
-			"../audio/SteppingStone.mp3",
-			"../audio/tailtoddle_lo.mp3"
+			"audio/Clarksville.mp3",
+			"audio/DaydreamBeliever.mp3",
+			"audio/ImABeliever.mp3",
+			"audio/SteppingStone.mp3",
+			"audio/tailtoddle_lo.mp3"
 		];
 
         // set the current playlist index (starting point)
@@ -81,7 +82,7 @@ angular.module('bandAppControllers', [])
                 currentTrack = 0;
             } else {
                 // otherwise increment through list
-                currentTrack++;
+                currentTrack = currentTrack + 1;
             }
 
             // change the audio element src file
@@ -91,10 +92,9 @@ angular.module('bandAppControllers', [])
         // check if the player exists in the html dom
         if (playPlaylist === null) {
             // throw an error displaying the player does not exist
-            var reason, throwError;
-            reason = "The Audio Player does not exist";
+            var reason = "The Audio Player does not exist";
             // if we catch an error store it for viewing
-            throwError = function (reason) {
+            var throwError = function (reason) {
                 $scope.error = reason;
             };
         } else {
@@ -107,7 +107,69 @@ angular.module('bandAppControllers', [])
 
     })
     .controller('ContactController', function ($scope) {
-        $scope.title = "Book Us";
+        $scope.title = "Contact Us";
+        $scope.firstNameLabel = "First Name: *";
+        $scope.lastNameLabel = "Last Name: *";
+        $scope.emailLabel = "E-mail: *";
+        $scope.messageLabel = "Message:";
+        $scope.collectFormData;
+        //
+        $scope.storeFormData = function () {
+            //
+            $scope.log = console.log($scope.collectFormData);
+
+            //
+            $scope.firstNameRequired = " ";
+            $scope.lastNameRequired = " ";
+            $scope.emailRequired = " ";
+            //
+            if (!$scope.collectFormData.FirstName) {
+                $scope.firstNameRequired = "First Name Required";
+            }
+            //
+            if (!$scope.collectFormData.LastName) {
+                $scope.lastNameRequired = "Last Name Required";
+            }
+            //
+            if (!$scope.collectFormData.Email) {
+                $scope.emailRequired = "E-mail Required";
+            }
+        };
+
+        // set our map properties
+        // create a LatLng object containing the coordinate for the center of the map
+        var latlng = new google.maps.LatLng(53.3498053, -6.260309699999993, 12);
+
+        // prepare the map properties
+        var options = {
+            zoom: 5,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            navigationControl: true,
+            mapTypeControl: false,
+            scrollwheel: false,
+            disableDoubleClickZoom: true
+        };
+
+        // initialize the map object
+        var map = new google.maps.Map(document.getElementById('googleMap'), options);
+
+        // add Marker
+        var marker1 = new google.maps.Marker({
+            position: latlng,
+            map: map
+        });
+
+        // add listener for a click on the pin
+        google.maps.event.addListener(marker1, 'click', function () {
+            infowindow.open(map, marker1);
+        });
+
+        // add information window
+        var infowindow = new google.maps.InfoWindow({
+            content: '<div class="map-pin-text"><strong>If we are not touring we are normally around here..</div>'
+        });
     });
 
+//----------------------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------------------//

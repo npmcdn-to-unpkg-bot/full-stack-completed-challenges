@@ -6,17 +6,21 @@ angular.module("bandApp", ['ngRoute', 'bandAppControllers', 'bandAppDirectives']
                 templateUrl: "templates/home.html",
                 controller: "HomeController"
             })
-            .when('/our-music', {
-                templateUrl: "templates/our-music.html",
+            .when('/meet-the-band', {
+                templateUrl: "templates/meet-the-band.html",
                 controller: "AudioController"
+            })
+            .when('/tour-info', {
+                templateUrl: "templates/tour-info.html",
+                controller: "TourController"
+            })
+            .when('/services', {
+                templateUrl: "templates/services.html",
+                controller: "ContactController"
             })
             .when('/searchiTunes', {
                 templateUrl: "templates/search-itunes.html",
-                controller: "itunesController"
-            })
-            .when('/contact', {
-                templateUrl: "templates/contact.html",
-                controller: "ContactController"
+                controller: "ItunesController"
             })
             .otherwise({
                 redirectTo: '/'
