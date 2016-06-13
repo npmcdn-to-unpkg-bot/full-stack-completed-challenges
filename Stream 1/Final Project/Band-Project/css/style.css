@@ -1,427 +1,395 @@
-/* import the glyphicons */
+/************************* Import Glyphicons *************************/
 
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
-/* main body style */
+/************************* Index HTML & Body Style (Global) *************************/
 
 html {
-    position: relative;
-    min-height: 100%;
+	position: relative;
+	min-height: 100%;
 }
 
 body {
-    max-width: 960px;
-    padding-top: 60px;
-    padding-bottom: 42px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../img/home/record-photo-14075.jpeg");
-    background-size: auto;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: #fff;
+	max-width: 960px;
+	padding-top: 60px;
+	padding-bottom: 42px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../img/home/record-photo-14075.jpeg");
+	background-size: auto;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #fff;
 }
 
 
-/* home styling */
+/************************* Page Style *************************/
 
 #body-content {
-    font-family: sans-serif;
+	font-family: sans-serif;
 }
 
 #last-nav-item {
-    margin-right: 16px;
+	margin-right: 16px;
 }
 
 .container-fluid,
 .row-fluid {
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
 }
 
 .jumbotron {
-    background-color: #333;
-    opacity: 0.9;
-    filter: alpha(opacity=0.9);
+	background-color: #333;
+	opacity: 0.9;
+	filter: alpha(opacity=0.9);
 }
 
 
-/* override jumbotron */
+/*** override jumbotron ***/
 
 .jumbotron P {
-    font-size: 1.2em;
-    font-family: sans-serif;
+	font-size: 1.2em;
+	font-family: sans-serif;
 }
 
 
-/* Carousel Styling - Carousel base class */
+/************************* Carousel Styling - Carousel Base Class *************************/
 
 .carousel {
-    height: 500px;
-    margin-bottom: 25px;
+	height: 500px;
+	margin-bottom: 25px;
 }
 
 
-/* Since positioning the image, we need to help out the caption */
+/*** Since positioning the image, we need to help out the caption ***/
 
 .carousel-caption {
-    z-index: 10;
+	z-index: 10;
 }
 
 
-/* Declare heights because of positioning of img element */
+/*** Declare heights because of positioning of img element ***/
 
 .carousel .item {
-    height: 500px;
-    background-color: #777;
+	height: 500px;
+	background-color: #777;
 }
 
 .carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    margin: auto;
-    height: 500px;
-    border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	margin: auto;
+	height: 500px;
+	border-radius: 5px;
 }
 
 #slides_control > div {
-    height: 200px;
+	height: 200px;
 }
 
 #slides_control {
-    position: absolute;
-    width: 400px;
-    left: 50%;
-    top: 20px;
-    margin-left: -200px;
+	position: absolute;
+	width: 400px;
+	left: 50%;
+	top: 20px;
+	margin-left: -200px;
 }
 
 
-/* itunes search style */
+/************************* Itunes Search & Song table style *************************/
 
 .form-control {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 225px;
-    max-width: 450px;
-    margin-bottom: 5px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 225px;
+	max-width: 450px;
+	margin-bottom: 5px;
 }
 
 
-/* override bootstrap CSS */
+/*** Override Bootstrap CSS ***/
 
 .btn-lg {
-    color: black;
-    margin-bottom: 10px;
+	color: black;
+	margin-bottom: 10px;
 }
 
 #search-table,
 #song-table {
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    border: solid 2px #f0ad4e;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	border: solid 2px #f0ad4e;
 }
 
 #search-table img {
-    margin: 5px;
+	margin: 5px;
 }
 
 #song-table img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
 }
 
 table thead tr th h3 {
-    text-align: center;
-    text-decoration: underline;
-    margin: 16px;
-    color: #f0ad4e;
+	text-align: center;
+	text-decoration: underline;
+	margin: 16px;
+	color: #f0ad4e;
 }
 
 table tbody tr td a {
-    font-size: 14px;
-    text-decoration: none;
-    color: #f0ad4e;
+	font-size: 14px;
+	text-decoration: none;
+	color: #f0ad4e;
 }
 
 
-/* our music page style */
-
-#meet-the-band {
-    width: 100%;
-}
-
-#meet-the-band td img {
-    width: 100px;
-    height: 100px;
-}
-
-#meet-the-band p {
-    padding: 20px;
-    text-align: left;
-}
-
-
-/* Audio player style */
+/************************* Audio Player Style *************************/
 
 #audio-player,
 #audio-player-buttons {
-    width: 100%;
-    text-align: center;
-    margin: 5px;
+	width: 100%;
+	text-align: center;
+	margin: 5px;
 }
 
 
-/* contact styling */
+/************************* Contact Form Styling *************************/
 
 fieldset legend {
-    background: #f0ad4e;
-    color: #000;
-    padding: 5px 10px;
-    font-size: 60px;
-    border-radius: 5px;
+	background: #f0ad4e;
+	color: #000;
+	padding: 5px 10px;
+	font-size: 60px;
+	border-radius: 5px;
 }
 
 fieldset {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    border: solid 2px #f0ad4e;
-    background: #333;
-    border-radius: 5px;
-    padding: 10px;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	border: solid 2px #f0ad4e;
+	background: #333;
+	border-radius: 5px;
+	padding: 10px;
 }
 
 .validation-span {
-    font-weight: 400;
-    color: #ff0000;
+	font-weight: 400;
+	color: #ff0000;
 }
 
 .label {
-    margin: 10px;
+	margin: 10px;
 }
 
 .list-group-item-text,
 .booking-info {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 .list-group .btn-lg {
-    margin: 10px;
+	margin: 10px;
 }
 
 
-/* map style */
+/************************* Google Map Style *************************/
 
 #googleMap {
-    width: 100%;
-    height: 500px;
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
+	width: 100%;
+	height: 500px;
+	-webkit-filter: grayscale(40%);
+	filter: grayscale(40%);
+	border: solid 10px #888;
+	border-radius: 20px;
 }
 
 .map-pin-text {
-    color: #000;
+	color: #000;
 }
 
 
-/* footer style */
+/************************* Footer Style *************************/
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #f5f5f5;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #f5f5f5;
 }
 
 footer p {
-    float: left;
-    text-align: center;
-    margin-top: 20px;
+	float: left;
+	text-align: center;
+	margin-top: 20px;
 }
 
 
-/* social icons */
+/*** Social Icons Style ***/
 
 footer ul {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    float: right;
-    list-style: none;
-    color: #f0ad4e;
-    font-size: 40px;
-    margin: 5px;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	float: right;
+	list-style: none;
+	color: #f0ad4e;
+	font-size: 40px;
+	margin: 5px;
 }
 
 .fa {
-    -webkit-transform: scale(0.8);
-    /* Browser Variations: */
-    -moz-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    color: #666;
+	-webkit-transform: scale(0.8);
+	/* Browser Variations: */
+	-moz-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	color: #888;
 }
 
 .fa:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
 }
 
 
-/*
-    Multicoloured Hover Variations
-*/
+/*** Multicoloured Hover Variations ***/
 
 .fa-facebook-square:hover {
-    color: #3B5998;
+	color: #3B5998;
 }
 
 .fa-twitter-square:hover {
-    color: #4099FF;
+	color: #4099FF;
 }
 
 .fa-google-plus-square:hover {
-    color: #d34836;
+	color: #d34836;
 }
 
 .fa-envelope:hover {
-    color: #f1df23;
+	color: #f1df23;
 }
 
 
-/* Responsive Design Handling */
+/************************* Responsive Design Handling *************************/
 
 
-/* Large desktop */
-
-@media (min-width: 980px) and (max-width: 1200px) {
-    padding-top: 60px;
-    padding-bottom: 42px;
-}
-
-
-/* Portrait tablet to landscape and desktop */
-
-@media (min-width: 768px) and (max-width: 979px) {
-    padding-top: 60px;
-    padding-bottom: 42px;
-}
-
-
-/* Landscape phone to portrait tablet */
+/*** Landscape Phone to Portrait Tablet ***/
 
 @media (min-width: 481px) and (max-width: 767px) {
-    padding-top: 60px;
-    padding-bottom: 42px;
+	/*** Body Style ***/
+	body {
+		padding-top: 5px;
+		padding-bottom: 42px;
+	}
+	/*** NavBar Style - Prevents it from sitting on top of the content ***/
+	.navbar-fixed-top {
+		position: relative;
+		top: auto;
+	}
+	.navbar-collapse {
+		max-height: none;
+	}
+	/*** Style the Main Content & Containers for Mobile ***/
+	.container-fluid,
+	.row-fluid {
+		text-align: center;
+		padding-left: 1px;
+		padding-right: 1px;
+	}
 }
 
 
-/* Landscape phones and down */
+/*** Landscape Phones and Down ***/
 
 @media (min-width: 190px) and (max-width: 480px) {
-    /* home style */
-    body {
-        padding-top: 60px;
-        padding-bottom: 42px;
-    }
-    .container-fluid,
-    .row-fluid {
-        text-align: center;
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-    /* itunes search style */
-    #search-table {
-        margin-left: auto;
-        margin-right: auto;
-        width: 250px;
-        border: solid 1px #fff;
-    }
-    #search-table td {
-        text-align: center;
-        color: #fff;
-        font-size: 10px;
-    }
-    #search-table a {
-        font-size: 12px;
-    }
-    #search-table td img {
-        width: 32px;
-        height: 32px;
-        margin: 2px;
-    }
-    #search-table h3 {
-        font-size: 12px;
-    }
-    .form-control {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 200px;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-    /* override bootstrap CSS */
-    .btn-lg {
-        font-size: 10px;
-        color: black;
-        margin-bottom: 5px;
-    }
-    /* our music page style */
-    #meet-the-band {
-        width: 100%;
-    }
-    #meet-the-band img {
-        max-width: 225px;
-        max-height: 225px;
-        margin: 5px 5px;
-    }
-    #meet-the-band p {
-        font-size: 10px;
-        text-align: inherit;
-    }
-    #audio-player audio {
-        max-width: 200px;
-    }
-    #song-table h3 {
-        font-size: 12px;
-    }
-    #song-table a {
-        font-size: 12px;
-    }
-    #song-table td {
-        text-align: center;
-        color: #fff;
-        font-size: 10px;
-    }
-    #song-table {
-        margin-left: auto;
-        margin-right: auto;
-        width: 250px;
-        border: solid 1px #fff;
-    }
-    #song-table td img {
-        width: 32px;
-        height: 32px;
-    }
-    footer p {
-        font-size: 12px;
-    }
-    footer ul {
-        color: #f0ad4e;
-        font-size: 14px;
-        margin-top: 18px;
-    }
+	/*** Body Style ***/
+	body {
+		padding-top: 5px;
+		padding-bottom: 42px;
+	}
+	/*** NavBar Style - Prevents it from sitting on top of the content ***/
+	.navbar-fixed-top {
+		position: relative;
+		top: auto;
+	}
+	.navbar-collapse {
+		max-height: none;
+	}
+	/*** Style the Main Content & Containers for Mobile ***/
+	.container-fluid,
+	.row-fluid {
+		text-align: center;
+		padding-left: 1px;
+		padding-right: 1px;
+	}
+	/************************* Itunes Search & Song table style *************************/
+	.form-control {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 200px;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	/*** Override Bootstrap CSS ***/
+	.btn-lg {
+		font-size: 10px;
+		color: black;
+		margin-bottom: 5px;
+	}
+	#search-table,
+	#song-table {
+		margin-left: auto;
+		margin-right: auto;
+		width: 250px;
+		border: solid 1px #fff;
+	}
+	#search-table td,
+	#song-table td {
+		text-align: center;
+		color: #fff;
+		font-size: 10px;
+	}
+	#search-table a,
+	#song-table a {
+		font-size: 12px;
+	}
+	#search-table td img,
+	#song-table td img {
+		width: 32px;
+		height: 32px;
+		margin: 2px 0;
+	}
+	#search-table h3,
+	#song-table h3 {
+		font-size: 12px;
+	}
+	/************************* Audio Player Style *************************/
+	#audio-player audio {
+		max-width: 200px;
+	}
+	/************************* Footer Style *************************/
+	footer p {
+		font-size: 10px;
+		margin-top: 24px;
+	}
+	footer ul {
+		color: #f0ad4e;
+		font-size: 14px;
+		margin-top: 20px;
+	}
 }
