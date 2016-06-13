@@ -16,8 +16,8 @@
 			<!-- add search form use ng-submit to call searchiTunes, pass the artist -->
 			<form name="search" ng-submit="searchiTunes(artist)">
 				<!-- search input begin -->
-				<input type="search" class="form-control" required placeholder="e.g. The Commitments" ng-model="artist" />
-				<input type="submit" class="btn-lg btn-warning" value="Search" />
+				<input type="text" class="form-control" required placeholder="e.g. The Commitments" ng-model="artist" />
+				<button class="btn-lg btn-warning" type="submit">Submit</button>
 				<!-- search input end -->
 			</form>
 			<!-- form end -->
