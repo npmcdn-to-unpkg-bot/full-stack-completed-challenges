@@ -86,8 +86,6 @@ body {
     min-width: 100%;
     margin: auto;
     height: 500px;
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%);
     border-radius: 5px;
 }
 

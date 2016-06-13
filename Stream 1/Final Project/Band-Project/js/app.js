@@ -2,7 +2,7 @@
 angular.module("bandApp", ['ngRoute', 'bandAppControllers', 'bandAppDirectives'])
     .config(function ($routeProvider) {
         $routeProvider
-            .when('/home', {
+            .when('/', {
                 templateUrl: "templates/home.html",
                 controller: "HomeController"
             })
@@ -23,6 +23,6 @@ angular.module("bandApp", ['ngRoute', 'bandAppControllers', 'bandAppDirectives']
                 controller: "ItunesController"
             })
             .otherwise({
-                redirectTo: '/home'
+                redirectTo: '/'
             });
     });
