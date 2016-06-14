@@ -116,3 +116,8 @@ Your project should follow the above guidelines, plus follow as far as possible:
 Note to view this example you will need to open a command window in the root
 folder and run ‘npm start’ this will install the node\_modules folder which will
 in turn run a local mini server allowing us to view and test our angular js app.
+
+ 
+
+The final project can be viewed by following this link:
+[http://gunnerjnr.uk/band-site](http://gunnerjnr.uk/band-site)
