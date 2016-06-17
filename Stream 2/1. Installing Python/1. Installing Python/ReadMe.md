@@ -30,10 +30,12 @@ prompt` window:
 >   interpreter, and it will now accept Python statements. Try running a few
 >   simple statements, remembering to press Enter after each one.
 
-\>\>\> message = "hello world"  
-\>\>\> print message  
-hello world  
-\>\>\>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>> message = "hello world"
+>>> print message
+hello world
+>>>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 >    
 
@@ -45,12 +47,14 @@ hello world
 >   We’re not limited to single line statements; we can also define functions
 >   and run them.
 
-\>\>\> def print\_message(message):  
-... print "I'm printing: " + message  
-...  
-\>\>\> print\_message('hello')  
-I'm printing: hello  
-\>\>\>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>> def print_message(message):
+... print "I'm printing: " + message
+...
+>>> print_message('hello')
+I'm printing: hello
+>>>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 >    
 
