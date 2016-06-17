@@ -4,8 +4,8 @@ No Challenge
  
 
 This lesson had no challenge so to speak. It did consist of heading to
-[https://python.org/](https://python.org/) and downloading `version 2.7.11` and
-installing it. (not `version 3`)
+<https://python.org/> and downloading `version 2.7.11` and installing it. (not
+`version 3`)
 
  
 
@@ -30,10 +30,10 @@ prompt` window:
 >   interpreter, and it will now accept Python statements. Try running a few
 >   simple statements, remembering to press Enter after each one.
 
->   \>\>\> message = "hello world"  
->   \>\>\> print message  
->   hello world  
->   \>\>\>
+\>\>\> message = "hello world"  
+\>\>\> print message  
+hello world  
+\>\>\>
 
 >    
 
@@ -45,12 +45,12 @@ prompt` window:
 >   We’re not limited to single line statements; we can also define functions
 >   and run them.
 
->   \>\>\> def print\_message(message):  
->   ... print "I'm printing: " + message  
->   ...  
->   \>\>\> print\_message('hello')  
->   I'm printing: hello  
->   \>\>\>
+\>\>\> def print\_message(message):  
+... print "I'm printing: " + message  
+...  
+\>\>\> print\_message('hello')  
+I'm printing: hello  
+\>\>\>
 
 >    
 
@@ -73,4 +73,4 @@ prompt` window:
 
  
 
-Later on we will be using the built in `IDLE `editor that comes with Python.
+Later on we will be using the built in `IDLE`editor that comes with Python.
