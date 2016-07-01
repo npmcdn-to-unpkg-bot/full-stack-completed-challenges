@@ -141,3 +141,7 @@ If the new test isn’t running, make sure you’re running the test class rath
 than the test method in the Run/Debug configuration:
 
 ![](img/img3.png)
+
+ 
+
+ 

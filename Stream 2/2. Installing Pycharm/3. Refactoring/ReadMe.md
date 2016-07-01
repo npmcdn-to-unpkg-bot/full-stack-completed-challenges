@@ -19,3 +19,5 @@ CHALLENGE
 -   Notice what happens when you type in a word, not a number. We will explore
     this further when we get to File IO and Exceptions, where you will learn how
     to handle errors like this in a more elegant manner.
+
+ 

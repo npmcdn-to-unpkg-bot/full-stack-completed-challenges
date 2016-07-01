@@ -27,3 +27,5 @@ The program now works as expected. You should also note that the number index
 counts from 0 - 9 not 1 - 10, so if you think you have found another bug because
 you have tried every guess and still have not won, this is more than likely the
 reason.
+
+ 
